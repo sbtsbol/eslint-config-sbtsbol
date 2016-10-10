@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-sbtsbol",
+  "version": "1.0.0",
+  "description": "Formalized JavaScript Style Guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbtsbol/eslint-config-sbtsbol.git"
+  },
+  "keywords": [
+    "styleguide",
+    "javascript",
+    "sbertech",
+    "sbtsbol",
+    "config",
+    "eslintconfig",
+    "eslint"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbtsbol/eslint-config-sbtsbol/issues"
+  },
+  "homepage": "https://github.com/sbtsbol/eslint-config-sbtsbol#readme",
+  "dependencies": {
+    "eslint-config-airbnb": "^12.0.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.7.1",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.0"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.sigma.sbrf.ru:8099/nexus/content/repositories/sbol_npm_release/",
+    "always-auth": true
+  }
+}
