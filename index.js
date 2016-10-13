@@ -75,6 +75,7 @@ module.exports = {
         }],
         'react/no-did-mount-set-state': 2,
         'react/no-did-update-set-state': 2,
+        'react/no-direct-mutation-state': 2,
         'react/jsx-no-target-blank': 2,
         'react/jsx-no-bind': 2,
         'react/jsx-equals-spacing': [1, 'never'],
