@@ -67,6 +67,7 @@ module.exports = {
         'max-len': 0,
         'prefer-spread': 0,
         'no-void': 0,
+        'no-extra-boolean-cast': 1,
         // React
         'react/forbid-prop-types': [1, {
             forbid: [
