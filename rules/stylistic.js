@@ -12,7 +12,7 @@ module.exports = {
 
         // enforce one true brace style
         // 'brace-style': ['error', '1tbs', { allowSingleLine: true }],
-        'brace-style': ['error', '1tbs'],
+        'brace-style': ['warn', '1tbs'],
 
         // require camel case names
         // camelcase: ['error', { properties: 'never' }],
