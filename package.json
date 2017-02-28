@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/sbtsbol/eslint-config-sbtsbol#readme",
   "dependencies": {
-    "eslint-config-stcherenkov": "~1.0.0",
     "eslint-plugin-import": "~2.2.0",
     "eslint-plugin-react": "~6.10.0"
   },

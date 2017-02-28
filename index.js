@@ -1,5 +1,4 @@
 module.exports = {
-    parser: 'babel-eslint',
     globals: {
         DEBUG: true
     },
@@ -9,10 +8,16 @@ module.exports = {
         jasmine: true
     },
     extends: [
-        'stcherenkov',
-        require.resolve('./rules/react'),
-        require.resolve('./rules/import')
-    ],
+        './rules/possible-errors',
+        './rules/best-practices',
+        './rules/strict-mode',
+        './rules/variables',
+        './rules/node-js-and-common-js',
+        './rules/stylistic',
+        './rules/es6',
+        './rules/react',
+        './rules/import',
+    ].map(require.resolve),
     ecmaFeatures: {
         arrowFunctions: true,
         blockBindings: true,
@@ -28,6 +33,8 @@ module.exports = {
         experimentalObjectRestSpread: true
     },
     parserOptions: {
+        ecmaVersion: 2017,
+        sourceType: 'module',
         ecmaFeatures: {
             arrowFunctions: true,
             blockBindings: true,
@@ -44,10 +51,5 @@ module.exports = {
         },
     },
     rules: {
-        'max-lines': ['warn', {
-            max: 400,
-            skipBlankLines: true,
-            skipComments: true
-        }],
     }
 }
