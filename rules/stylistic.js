@@ -238,7 +238,7 @@ module.exports = {
             newIsCap: true,
             newIsCapExceptions: [],
             capIsNew: false,
-            capIsNewExceptionPattern: ['^Immutable\\..+'],
+            capIsNewExceptionPattern: '^Immutable\\..+',
             properties: true,
         }],
 
