@@ -128,8 +128,7 @@ module.exports = {
         'no-implied-eval': 'error',
 
         // disallow this keywords outside of classes or class-like objects
-        // 'no-invalid-this': 'off',
-        'no-invalid-this': 'error',
+        'no-invalid-this': 'off',
 
         // disallow usage of __iterator__ property
         'no-iterator': 'error',
