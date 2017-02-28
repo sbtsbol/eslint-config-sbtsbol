@@ -26,14 +26,12 @@
   },
   "homepage": "https://github.com/sbtsbol/eslint-config-sbtsbol#readme",
   "dependencies": {
-    "eslint-config-airbnb": "^12.0.0",
-    "eslint-plugin-import": "^1.16.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.4.0"
+    "eslint-config-stcherenkov": "~1.0.0",
+    "eslint-plugin-import": "~2.2.0",
+    "eslint-plugin-react": "~6.10.0"
   },
   "peerDependencies": {
-    "babel-eslint": "^6.1.2",
-    "eslint": "^3.7.1"
+    "eslint": "^3.16.0"
   },
   "publishConfig": {
     "registry": "http://nexus.sigma.sbrf.ru:8099/nexus/content/repositories/sbol_npm_release/",
