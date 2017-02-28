@@ -331,7 +331,9 @@ module.exports = {
 
         // Prevent void DOM elements from receiving children
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
-        'react/void-dom-elements-no-children': 'error',
+        // TODO: enable
+        // TODO: throws for unknown reason, needs investigation
+        'react/void-dom-elements-no-children': 'off',
     },
 
     settings: {
