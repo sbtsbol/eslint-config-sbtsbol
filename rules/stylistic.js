@@ -34,7 +34,8 @@ module.exports = {
         }],
 
         // enforce consistency of trailing commas
-        'comma-dangle': ['warn', {
+        // TODO: enable later?
+        'comma-dangle': ['off', {
             arrays: 'only-multiline',
             objects: 'always-multiline',
             imports: 'only-multiline',
