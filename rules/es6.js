@@ -53,7 +53,7 @@ module.exports = {
         // 'no-confusing-arrow': ['error', {
         //     allowParens: true,
         // }],
-        'no-confusing-arrow': ['warn', {
+        'no-confusing-arrow': ['off', {
             allowParens: true,
         }],
 
