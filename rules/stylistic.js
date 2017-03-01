@@ -79,7 +79,9 @@ module.exports = {
         // enforces use of function declarations or expressions
         // http://eslint.org/docs/rules/func-style
         // 'func-style': ['off', 'expression'],
-        'func-style': ['warn', 'declaration'],
+        'func-style': ['warn', 'declaration', {
+            allowArrowFunction: true
+        }],
 
         // Blacklist certain identifiers to prevent them being used
         // http://eslint.org/docs/rules/id-blacklist
