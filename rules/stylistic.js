@@ -80,7 +80,7 @@ module.exports = {
         // http://eslint.org/docs/rules/func-style
         // 'func-style': ['off', 'expression'],
         'func-style': ['warn', 'declaration', {
-            allowArrowFunction: true
+            allowArrowFunctions: true
         }],
 
         // Blacklist certain identifiers to prevent them being used
