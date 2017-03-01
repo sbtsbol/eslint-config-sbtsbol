@@ -274,8 +274,9 @@ module.exports = {
 
         // Forbid certain props on Components
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-component-props.md
+        // TODO: add className to forbidden props as soon as we get rid of Message component
         'react/forbid-component-props': ['warn', {
-            forbid: ['className', 'style'],
+            forbid: ['style'],
         }],
 
         // Prevent problem with children and props.dangerouslySetInnerHTML
