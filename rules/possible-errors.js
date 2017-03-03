@@ -131,6 +131,7 @@ module.exports = {
                 abstract: 'virtual',
             },
             preferType: {
+                function: 'Function',
                 boolean: 'Boolean',
                 number: 'Number',
                 array: 'Array',
