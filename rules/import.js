@@ -28,6 +28,7 @@ module.exports = {
         ],
 
         'import/external-module-folders': [
+            'node_modules',
             'core_modules'
         ],
 
