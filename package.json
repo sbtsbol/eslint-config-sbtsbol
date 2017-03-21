@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sbtsbol",
-  "version": "2.1.10",
+  "version": "2.1.11",
   "description": "Formalized JavaScript Style Guide",
   "main": "index.js",
   "scripts": {
