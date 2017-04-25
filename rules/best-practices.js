@@ -151,7 +151,7 @@ module.exports = {
         //     detectObjects: false,
         // }],
         'no-magic-numbers': ['warn', {
-            ignore: [0, 1],
+            ignore: [0, 1, -1, 100],
             ignoreArrayIndexes: false,
             enforceConst: true,
             detectObjects: false,
