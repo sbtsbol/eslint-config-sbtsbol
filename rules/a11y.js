@@ -2,12 +2,7 @@ module.exports = {
     plugins: [
         'jsx-a11y'
     ],
-    extends: [
-        'plugin:jsx-a11y/recommended'
-    ],
     rules: {
-        'jsx-a11y/img-has-alt': 'warn',
-        'jsx-a11y/accessible-emoji': 'warn',
         'jsx-a11y/alt-text': 'warn',
         'jsx-a11y/anchor-has-content': 'warn',
         'jsx-a11y/aria-activedescendant-has-tabindex': 'warn',
@@ -17,12 +12,20 @@ module.exports = {
         'jsx-a11y/aria-unsupported-elements': 'warn',
         'jsx-a11y/click-events-have-key-events': 'warn',
         'jsx-a11y/heading-has-content': 'warn',
-        'jsx-a11y/href-no-hash': 'warn',
+
         'jsx-a11y/html-has-lang': 'warn',
         'jsx-a11y/iframe-has-title': 'warn',
         'jsx-a11y/img-redundant-alt': 'warn',
         'jsx-a11y/interactive-supports-focus': 'warn',
-        'jsx-a11y/label-has-for': 'warn',
+        'jsx-a11y/label-has-for': [
+            'warn',
+            {
+                required: {
+                    some: [ "nesting", "id" ]
+                },
+                allowChildren: true
+            }
+        ],
         'jsx-a11y/media-has-caption': 'warn',
         'jsx-a11y/mouse-events-have-key-events': 'warn',
         'jsx-a11y/no-access-key': 'warn',
@@ -32,9 +35,10 @@ module.exports = {
         'jsx-a11y/no-interactive-element-to-noninteractive-role': [
             'warn',
             {
-                tr: ['none', 'presentation']
-            }
+                tr: ['none', 'presentation'],
+            },
         ],
+
         'jsx-a11y/no-noninteractive-element-interactions': [
             'warn',
             {
@@ -44,10 +48,11 @@ module.exports = {
                     'onMouseUp',
                     'onKeyPress',
                     'onKeyDown',
-                    'onKeyUp'
-                ]
-            }
+                    'onKeyUp',
+                ],
+            },
         ],
+
         'jsx-a11y/no-noninteractive-element-to-interactive-role': [
             'warn',
             {
@@ -58,7 +63,7 @@ module.exports = {
                     'radiogroup',
                     'tablist',
                     'tree',
-                    'treegrid'
+                    'treegrid',
                 ],
                 ol: [
                     'listbox',
@@ -67,20 +72,22 @@ module.exports = {
                     'radiogroup',
                     'tablist',
                     'tree',
-                    'treegrid'
+                    'treegrid',
                 ],
                 li: ['menuitem', 'option', 'row', 'tab', 'treeitem'],
                 table: ['grid'],
-                td: ['gridcell']
-            }
+                td: ['gridcell'],
+            },
         ],
+
         'jsx-a11y/no-noninteractive-tabindex': [
             'warn',
             {
                 tags: [],
-                roles: ['tabpanel']
-            }
+                roles: ['tabpanel'],
+            },
         ],
+
         'jsx-a11y/no-onchange': 'warn',
         'jsx-a11y/no-redundant-roles': 'warn',
         'jsx-a11y/no-static-element-interactions': [
@@ -92,13 +99,13 @@ module.exports = {
                     'onMouseUp',
                     'onKeyPress',
                     'onKeyDown',
-                    'onKeyUp'
-                ]
-            }
+                    'onKeyUp',
+                ],
+            },
         ],
         'jsx-a11y/role-has-required-aria-props': 'warn',
         'jsx-a11y/role-supports-aria-props': 'warn',
         'jsx-a11y/scope': 'warn',
-        'jsx-a11y/tabindex-no-positive': 'warn'
+        'jsx-a11y/tabindex-no-positive': 'warn',
     }
 }

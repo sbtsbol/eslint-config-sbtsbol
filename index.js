@@ -16,8 +16,8 @@ module.exports = {
         './rules/stylistic',
         './rules/es6',
         './rules/react',
-        './rules/a11y',
         './rules/import',
+        './rules/a11y',
     ].map(require.resolve),
     ecmaFeatures: {
         arrowFunctions: true,
