@@ -17,6 +17,7 @@ module.exports = {
         './rules/es6',
         './rules/react',
         './rules/import',
+        './rules/a11y',
     ].map(require.resolve),
     ecmaFeatures: {
         arrowFunctions: true,
