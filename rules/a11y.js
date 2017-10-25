@@ -3,25 +3,37 @@ module.exports = {
         'jsx-a11y'
     ],
     rules: {
-        'jsx-a11y/alt-text': 'warn',
-        'jsx-a11y/anchor-has-content': 'warn',
+        'jsx-a11y/alt-text': ['warn', {
+            elements: ['img', 'object', 'area', 'input[type="image"]'],
+            img: ['Icon', 'Loader']
+        }],
+        'jsx-a11y/anchor-has-content': ['error', {
+            components: ['Button.Link', 'Link']
+        }],
         'jsx-a11y/aria-activedescendant-has-tabindex': 'warn',
         'jsx-a11y/aria-props': 'warn',
         'jsx-a11y/aria-proptypes': 'warn',
         'jsx-a11y/aria-role': 'warn',
         'jsx-a11y/aria-unsupported-elements': 'warn',
         'jsx-a11y/click-events-have-key-events': 'warn',
-        'jsx-a11y/heading-has-content': 'warn',
-
+        'jsx-a11y/heading-has-content': ['warn', {
+            components: [
+                'Headline', 'Subheader', 'Title',
+                'Typography.Headline', 'Typography.Subheader', 'Typography.Title'
+            ]
+        }],
         'jsx-a11y/html-has-lang': 'warn',
         'jsx-a11y/iframe-has-title': 'warn',
-        'jsx-a11y/img-redundant-alt': 'warn',
-        'jsx-a11y/interactive-supports-focus': 'warn',
+        'jsx-a11y/img-redundant-alt': ['warn', {
+            components: ['Icon', 'Loader'],
+            words: ['Иконка', 'Картинка', 'Лоадер', 'Загрузка']
+        }],
+        'jsx-a11y/interactive-supports-focus': 'error',
         'jsx-a11y/label-has-for': [
             'warn',
             {
                 required: {
-                    some: [ "nesting", "id" ]
+                    some: ["nesting", "id"]
                 },
                 allowChildren: true
             }
@@ -29,7 +41,9 @@ module.exports = {
         'jsx-a11y/media-has-caption': 'warn',
         'jsx-a11y/mouse-events-have-key-events': 'warn',
         'jsx-a11y/no-access-key': 'warn',
-        'jsx-a11y/no-autofocus': 'warn',
+        'jsx-a11y/no-autofocus': ['warn', {
+            "ignoreNonDOM": true
+        }],
         'jsx-a11y/no-distracting-elements': 'warn',
 
         'jsx-a11y/no-interactive-element-to-noninteractive-role': [
