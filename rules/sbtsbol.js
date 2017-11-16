@@ -13,7 +13,10 @@ module.exports = {
     rules: {
         'sbtsbol/no-warning-comments-regexp': ['warn', {
             terms: [oneRuleComment, noMultiDisable],
-            message: 'Предупреждения при использовании: TODOs; множественные disable; disable без приставки ", comment: сообщение менее 10 символов"'
+            message: 'Нежелательные комментарии: TODOs; ' +
+            'eslint-disable на несколько правил; ' +
+            'eslint-disable для одного правила без комментария к причине отключения, ' +
+            'пример правильного использования: "eslint-disable-line some-rule, comment: Развернутый текст с обоснованием"'
         }],
     }
 }
