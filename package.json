@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-sbtsbol",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "description": "Formalized JavaScript Style Guide",
   "main": "index.js",
   "scripts": {
@@ -26,8 +26,9 @@
   },
   "homepage": "https://github.com/sbtsbol/eslint-config-sbtsbol#readme",
   "dependencies": {
-    "eslint-plugin-import": "~2.7.0",
-    "eslint-plugin-react": "~7.3.0"
+    "eslint-plugin-import": "~2.8.0",
+    "eslint-plugin-react": "~7.3.0",
+    "eslint-plugin-sbtsbol": "~1.0.0"
   },
   "peerDependencies": {
     "eslint": "^4.10.0"

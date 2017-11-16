@@ -16,7 +16,8 @@ module.exports = {
         './rules/stylistic',
         './rules/es6',
         './rules/react',
-        './rules/import'
+        './rules/import',
+        './rules/sbtsbol'
     ].map(require.resolve),
     parserOptions: {
         ecmaVersion: 2017,
